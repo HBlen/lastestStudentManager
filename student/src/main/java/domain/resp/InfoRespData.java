@@ -1,10 +1,11 @@
-package domain;
+package domain.resp;
 
-import sun.java2d.pipe.ValidatePipe;
-
-public class StudentGrade {
+public class InfoRespData {
   private Long stuCode;
+  private String name;
+  private String classname;
   private int year;
+  private String courseName;
   private Long courseCode;
   private Double score;
 
@@ -22,5 +23,17 @@ public class StudentGrade {
 
   public void setScore(Double score) {
     this.score = score;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setClassname(String classname) {
+    this.classname = classname;
+  }
+
+  public void setCourseName(String courseName) {
+    this.courseName = courseName;
   }
 }
